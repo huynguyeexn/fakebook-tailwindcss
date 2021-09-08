@@ -15,7 +15,7 @@
 <body class="bg-gray-100 text-gray-500">
   <!-- TOP NAV -->
   <nav class="
-      sticky
+      fixed
         bg-white
         shadow-md
         h-14
@@ -304,9 +304,10 @@
   <!-- END TOP NAV -->
 
   <!-- MAIN -->
-  <main class="flex lg:justify-start px-4 xl:justify-center h-screen">
+  <main class="flex lg:justify-start px-4 xl:justify-center h-screen mt-14">
     <!-- LEFT SIDE -->
-    <aside class="hidden xl:flex  flex-col w-1/4 h-full p-2 overflow-scroll fixed top-0 left-0 mt-14 pb-14 py-4 text-sm">
+    <aside
+      class="hidden xl:flex  flex-col w-1/4 h-full p-2 overflow-scroll fixed top-0 left-0 mt-14 pb-14 py-4 text-sm">
       <ul class="space-y-1 w-full">
         <li>
           <a href="" class="flex items-center space-x-2 px-2 py-1 hover:bg-gray-200 rounded-lg w-full transition-all">
@@ -318,9 +319,9 @@
           <a href="" class="flex items-center space-x-2 px-2 py-1 hover:bg-gray-200 rounded-lg w-full transition-all">
             <img src="images/find-friends.png" alt="" class="h-9 w-9 rounded-full mr-1 mr-1">
             <span class="font-medium text-black">Find Friends
-              
+
               <span class=" text-blue-500 font-normal text-xs flex items-center">
-                <i class='bx bxs-circle text-xs mr-1' ></i>
+                <i class='bx bxs-circle text-xs mr-1'></i>
                 1 request
               </span>
             </span>
@@ -332,7 +333,7 @@
             <span class="font-medium text-black flex flex-col">
               Pages
               <span class=" text-blue-500 font-normal text-xs flex items-center">
-                <i class='bx bxs-circle text-xs mr-1' ></i>
+                <i class='bx bxs-circle text-xs mr-1'></i>
                 1 new
               </span>
             </span>
@@ -344,7 +345,7 @@
             <span class="font-medium text-black">
               Marketplace
               <span class=" text-blue-500 font-normal text-xs flex items-center">
-                <i class='bx bxs-circle text-xs mr-1' ></i>
+                <i class='bx bxs-circle text-xs mr-1'></i>
                 2 new
               </span>
             </span>
@@ -362,12 +363,12 @@
             <span class="font-medium text-black">Saved</span>
           </a>
         </li>
-        
+
         <li>
           <a href="" class="flex items-center space-x-2 px-2 py-1 hover:bg-gray-200 rounded-lg w-full transition-all">
             <div class="h-9 w-9 rounded-full mr-1 flex justify-center items-center bg-gray-300">
               <i class='bx bx-chevron-down text-2xl'></i>
-            </div> 
+            </div>
             <span class="font-medium text-black">See more</span>
           </a>
         </li>
@@ -376,7 +377,8 @@
 
       <div class="flex mt-2 px-2 flex justify-between items-center">
         <span class="font-semibold">Your Shortcuts</span>
-        <a href="#" class="hover:text-blue-500 hover:bg-gray-200 rounded-lg flex justify-center items-center h-9 w-9">Edit</a>
+        <a href="#"
+          class="hover:text-blue-500 hover:bg-gray-200 rounded-lg flex justify-center items-center h-9 w-9">Edit</a>
       </div>
 
       <ul class="space-y-1 w-full">
@@ -392,7 +394,7 @@
             <span class="font-medium text-black">J2Team community</span>
           </a>
         </li>
-        
+
         <li>
           <a href="" class="flex items-center space-x-2 px-2 py-1 hover:bg-gray-200 rounded-lg w-full transition-all">
             <img src="images/group-3.jpg" alt="" class="h-9 w-9 rounded-lg">
@@ -411,12 +413,12 @@
             <span class="font-medium text-black">Lập trình PHP - Laravel Việt Nam</span>
           </a>
         </li>
-        
+
         <li>
           <a href="" class="flex items-center space-x-2 px-2 py-1 hover:bg-gray-200 rounded-lg w-full transition-all">
             <div class="h-9 w-9 rounded-full mr-1 flex justify-center items-center bg-gray-300">
               <i class='bx bx-chevron-down text-2xl'></i>
-            </div> 
+            </div>
             <span class="font-medium text-black">See more</span>
           </a>
         </li>
@@ -445,30 +447,35 @@
 
       <!-- STORY -->
       <section class="flex space-x-2 mt-2 relative items-center">
-        <div class="w-1/5 rounded-lg h-48 overflow-hidden flex flex-col hover:shadow-lg hover:scale-105 transform duration-200 ease-in-out transition-all ease-in-out">
-            <div class=" h-full">
-              <img src="images/avatar.jpg" alt="" class="h-36 object-cover">
+        <div
+          class="w-1/5 rounded-lg h-48 overflow-hidden flex flex-col hover:shadow-lg hover:scale-105 transform duration-200 ease-in-out transition-all ease-in-out">
+          <div class=" h-full">
+            <img src="images/avatar.jpg" alt="" class="h-36 object-cover">
+          </div>
+          <div class="h-full bg-white flex justify-center items-end font-semibold relative">
+            <div
+              class="h-10 w-10 border-4 border-white bg-blue-500 absolute rounded-full flex justify-center items-center -top-5">
+              <i class='bx bx-plus text-2xl text-white'></i>
             </div>
-            <div class="h-full bg-white flex justify-center items-end font-semibold relative">
-              <div class="h-10 w-10 border-4 border-white bg-blue-500 absolute rounded-full flex justify-center items-center -top-5">
-                <i class='bx bx-plus text-2xl text-white' ></i>
-              </div>
-              <a class="m-2 cursor-pointer text-black">
-                Create story
-              </a>
-            </div>
+            <a class="m-2 cursor-pointer text-black">
+              Create story
+            </a>
+          </div>
         </div>
 
         <!-- STORY ITEM -->
-        <div class="w-1/5 relative rounded-lg h-48 overflow-hidden flex flex-col hover:shadow-lg hover:scale-105 transform duration-200 ease-in-out transition-all ease-in-out">
+        <div
+          class="w-1/5 relative rounded-lg h-48 overflow-hidden flex flex-col hover:shadow-lg hover:scale-105 transform duration-200 ease-in-out transition-all ease-in-out">
           <div class=" h-full">
             <img src="images/story-1.jpg" alt="" class="w-full min-h-full object-cover">
           </div>
-          <div class="overplay opacity-20 absolute h-full w-full bg-black flex flex-col justify-between items-start p-2">
+          <div
+            class="overplay opacity-20 absolute h-full w-full bg-black flex flex-col justify-between items-start p-2">
           </div>
-          
+
           <div class="absolute h-full w-full flex flex-col justify-between items-start p-1">
-            <div class="h-10 w-10 border-4 border-blue-500 rounded-full flex justify-center items-center overflow-hidden m-2">
+            <div
+              class="h-10 w-10 border-4 border-blue-500 rounded-full flex justify-center items-center overflow-hidden m-2">
               <img src="images/contact-1.jpg" class="scale-125 transform" alt="">
             </div>
             <a class="m-2 cursor-pointer text-white font-semibold">
@@ -478,15 +485,18 @@
         </div>
 
         <!-- STORY ITEM -->
-        <div class="w-1/5 relative rounded-lg h-48 overflow-hidden flex flex-col hover:shadow-lg hover:scale-105 transform duration-200 ease-in-out transition-all ease-in-out">
+        <div
+          class="w-1/5 relative rounded-lg h-48 overflow-hidden flex flex-col hover:shadow-lg hover:scale-105 transform duration-200 ease-in-out transition-all ease-in-out">
           <div class=" h-full">
             <img src="images/story-2.jpg" alt="" class="w-full min-h-full object-cover">
           </div>
-          <div class="overplay opacity-20 absolute h-full w-full bg-black flex flex-col justify-between items-start p-2">
+          <div
+            class="overplay opacity-20 absolute h-full w-full bg-black flex flex-col justify-between items-start p-2">
           </div>
-          
+
           <div class="absolute h-full w-full flex flex-col justify-between items-start p-1">
-            <div class="h-10 w-10 border-4 border-blue-500 rounded-full flex justify-center items-center overflow-hidden m-2">
+            <div
+              class="h-10 w-10 border-4 border-blue-500 rounded-full flex justify-center items-center overflow-hidden m-2">
               <img src="images/contact-2.jpg" class="scale-125 transform" alt="">
             </div>
             <a class="m-2 cursor-pointer text-white font-semibold">
@@ -494,17 +504,20 @@
             </a>
           </div>
         </div>
-        
+
         <!-- STORY ITEM -->
-        <div class="w-1/5 relative rounded-lg h-48 overflow-hidden flex flex-col hover:shadow-lg hover:scale-105 transform duration-200 ease-in-out transition-all ease-in-out">
+        <div
+          class="w-1/5 relative rounded-lg h-48 overflow-hidden flex flex-col hover:shadow-lg hover:scale-105 transform duration-200 ease-in-out transition-all ease-in-out">
           <div class=" h-full">
             <img src="images/story-3.jpg" alt="" class="w-full min-h-full object-cover">
           </div>
-          <div class="overplay opacity-20 absolute h-full w-full bg-black flex flex-col justify-between items-start p-2">
+          <div
+            class="overplay opacity-20 absolute h-full w-full bg-black flex flex-col justify-between items-start p-2">
           </div>
-          
+
           <div class="absolute h-full w-full flex flex-col justify-between items-start p-1">
-            <div class="h-10 w-10 border-4 border-blue-500 rounded-full flex justify-center items-center overflow-hidden m-2">
+            <div
+              class="h-10 w-10 border-4 border-blue-500 rounded-full flex justify-center items-center overflow-hidden m-2">
               <img src="images/contact-10.jpg" class="scale-125 transform" alt="">
             </div>
             <a class="m-2 cursor-pointer text-white font-semibold">
@@ -512,17 +525,20 @@
             </a>
           </div>
         </div>
-        
+
         <!-- STORY ITEM -->
-        <div class="w-1/5 relative rounded-lg h-48 overflow-hidden flex flex-col hover:shadow-lg hover:scale-105 transform duration-200 ease-in-out transition-all ease-in-out">
+        <div
+          class="w-1/5 relative rounded-lg h-48 overflow-hidden flex flex-col hover:shadow-lg hover:scale-105 transform duration-200 ease-in-out transition-all ease-in-out">
           <div class=" h-full">
             <img src="images/story-4.jpg" alt="" class="w-full min-h-full object-cover">
           </div>
-          <div class="overplay opacity-20 absolute h-full w-full bg-black flex flex-col justify-between items-start p-2">
+          <div
+            class="overplay opacity-20 absolute h-full w-full bg-black flex flex-col justify-between items-start p-2">
           </div>
-          
+
           <div class="absolute h-full w-full flex flex-col justify-between items-start p-1">
-            <div class="h-10 w-10 border-4 border-blue-500 rounded-full flex justify-center items-center overflow-hidden m-2">
+            <div
+              class="h-10 w-10 border-4 border-blue-500 rounded-full flex justify-center items-center overflow-hidden m-2">
               <img src="images/avatar-story.jpg" class="scale-125 transform" alt="">
             </div>
             <a class="m-2 cursor-pointer text-white font-semibold">
@@ -532,8 +548,9 @@
         </div>
 
         <!-- NEXT STORY -->
-        <div class="absolute h-12 w-12 bg-white hover:bg-gray-200 rounded-full flex justify-center items-center shadow-md -right-6">
-          <i class='bx bx-right-arrow-alt text-3xl' ></i>
+        <div
+          class="absolute h-12 w-12 bg-white hover:bg-gray-200 rounded-full flex justify-center items-center shadow-md -right-6">
+          <i class='bx bx-right-arrow-alt text-3xl'></i>
         </div>
       </section>
       <!-- END STORY -->
@@ -543,22 +560,24 @@
         <div class="flex">
           <img src="images/avatar.jpg" alt="My Avatar" class="rounded-full h-10 w-10 mr-4">
           <input type="text" name="" id="" placeholder="What's on yout mind, Huy?"
-          class="text-lg text-black px-4 py-2 bg-gray-100 w-full rounded-full hover:bg-gray-200 focus:outline-none"
-          >
+            class="text-lg text-black px-4 py-2 bg-gray-100 w-full rounded-full hover:bg-gray-200 focus:outline-none">
         </div>
 
         <div class="border-b-2 border-gray-200 my-2 w-full"></div>
 
         <div class="flex space-x-2">
-          <a href="#" class="w-1/3 cursor-pointer hover:bg-gray-100 rounded-lg text-center flex justify-center items-center py-2 px-2">
+          <a href="#"
+            class="w-1/3 cursor-pointer hover:bg-gray-100 rounded-lg text-center flex justify-center items-center py-2 px-2">
             <img src="images/livestream.png" alt="" class="h-6 w-6">
             <span class="font-semibold ml-2">Live Video</span>
           </a>
-          <a href="#" class="w-1/3 cursor-pointer hover:bg-gray-100 rounded-lg text-center flex justify-center items-center py-2 px-2">
+          <a href="#"
+            class="w-1/3 cursor-pointer hover:bg-gray-100 rounded-lg text-center flex justify-center items-center py-2 px-2">
             <img src="images/photos.png" alt="" class="h-6 w-6">
             <span class="font-semibold ml-2">Photo/Video</span>
           </a>
-          <a href="#" class="w-1/3 cursor-pointer hover:bg-gray-100 rounded-lg text-center flex justify-center items-center py-2 px-2">
+          <a href="#"
+            class="w-1/3 cursor-pointer hover:bg-gray-100 rounded-lg text-center flex justify-center items-center py-2 px-2">
             <img src="images/feeling.png" alt="" class="h-6 w-6">
             <span class="font-semibold ml-2">Feeling/Activity</span>
           </a>
@@ -566,14 +585,14 @@
       </section>
       <!-- END NEW STATUS -->
 
-      
       <!-- CREATE ROOM -->
       <section class="shadow-lg rounded-lg bg-white p-4 flex space-x-4">
-          <a href="" class="flex items-center space-x-2 w-40 rounded-full border-2 border-blue-100 px-4 py-1 hover:bg-gray-100">
-            <img src="images/creatt-room.png" alt="" class="h-7 w-7"/>
-            <span class="text-blue-500 font-semibold">Create Room</span>
-            </div>
-          </a>
+        <a href=""
+          class="flex items-center space-x-2 w-40 rounded-full border-2 border-blue-100 px-4 py-1 hover:bg-gray-100">
+          <img src="images/creatt-room.png" alt="" class="h-7 w-7" />
+          <span class="text-blue-500 font-semibold">Create Room</span>
+          </div>
+        </a>
         <ul class="m-0 flex space-x-2">
           <li>
             <a href="" class="flex items-center py-1 rounded-lg w-full transition-all">
@@ -593,7 +612,7 @@
               </div>
             </a>
           </li>
-          
+
           <li>
             <a href="" class="flex items-center py-1 rounded-lg w-full transition-all">
               <div class="relative">
@@ -603,7 +622,7 @@
               </div>
             </a>
           </li>
-          
+
           <li>
             <a href="" class="flex items-center py-1 rounded-lg w-full transition-all">
               <div class="relative">
@@ -613,7 +632,7 @@
               </div>
             </a>
           </li>
-          
+
           <li>
             <a href="" class="flex items-center py-1 rounded-lg w-full transition-all">
               <div class="relative">
@@ -623,7 +642,7 @@
               </div>
             </a>
           </li>
-          
+
           <li>
             <a href="" class="flex items-center py-1 rounded-lg w-full transition-all">
               <div class="relative">
@@ -634,7 +653,7 @@
             </a>
           </li>
 
-          
+
           <li>
             <a href="" class="flex items-center py-1 rounded-lg w-full transition-all">
               <div class="relative">
@@ -647,7 +666,7 @@
           <li>
             <a href="" class="flex items-center py-1 rounded-lg w-full transition-all">
               <div class="h-9 w-9 hover:shadow-md flex justify-center items-center rounded-full border">
-                <i class='bx bxs-chevron-right' ></i>
+                <i class='bx bxs-chevron-right'></i>
               </div>
             </a>
           </li>
@@ -655,15 +674,136 @@
       </section>
       <!-- END CREATE ROOM -->
 
+      <!-- POST LIST -->
+      <div class="">
+        <!-- POST -->
+        <div class="shadow bg-white rounded-lg mb-48">
+          <!-- POST HEADER -->
+          <div class="px-4 py-3">
+            <!-- POST AUTHOR -->
+            <div class="flex justify-between items-center mb-2">
+              <div class="flex">
+                <img class="h-12 w-12 rounded-full cursor-pointer" src="./images/avatar.jpg" alt="">
+                <div class="ml-2">
+                  <p><a class="font-semibold text-black hover:underline" href="#">Nguyễn Huy</a> is with <a
+                      class="font-semibold text-black hover:underline" href="#">Ngân Tâm</a>.</p>
+                  <p>Jun 27 <span aria-hidden="true"> · </span> <i class='bx bx-globe'></i></p>
+                </div>
+              </div>
+              <div class="grid place-items-center p-2 hover:bg-gray-200 cursor-pointer rounded-full text-xl">
+                <i class='bx bx-dots-horizontal-rounded'></i>
+              </div>
+            </div>
+            <!-- END POST AUTHOR -->
 
-      <div style="min-height: 100vh;" class="bg-purple-500 rounded-lg text-center p-4">
-        <p class="text-white font-semibold text-3xl">Main Content</p>
+            <!-- POST CONTENT -->
+            <div class="text-black">
+              Chỉ ước thời gian kia ngừng trôi
+              <br>
+              Để bên em thêm nhiều hơn...
+            </div>
+            <!-- END POST CONTENT -->
+          </div>
+          <!-- END POST HEADER -->
+
+          <!-- POST MEDIA -->
+          <div class="border">
+            <img class="w-full" src="./images/post-1.jpg" alt="">
+          </div>
+          <!-- END POST MEDIA -->
+
+          <!-- POST FOOTER -->
+          <div class="px-4 py-3">
+            <!-- POST REACT -->
+            <div class="mb-2">
+              <div class="flex justify-between">
+                <div class="flex justify-start items-center cursor-pointer">
+                  <img class="h-4" src="./images/like.svg" alt="">
+                  <img class="h-4" src="./images/lovesvg.svg" alt="">
+                  <img class="h-4" src="./images/haha.svg" alt="">
+                  <span class="hover:underline ml-2 cursor-pointer">Ngân Tâm, Nguyễn Hằng and 9 others</span>
+                </div>
+                <span class="cursor-pointer hover:underline ">9 Comments</span>
+              </div>
+            </div>
+            <!-- END POST REACT -->
+            <!-- POST ACTIONS -->
+            <div class="mb-2 border-t border-b  py-1 grid grid-cols-3 place-items-stretch gap-2 font-semibold">
+              <div class="text-center hover:bg-gray-200 py-1.5 cursor-pointer rounded font-semibold">
+                <span class="flex justify-center items-center"><i class='mr-1 bx bx-like'></i> Like</span>
+              </div>
+              <div class="text-center hover:bg-gray-200 py-1.5 cursor-pointer rounded font-semibold">
+                <span class="flex justify-center items-center"><i class='mr-1 bx bx-comment'></i> Comment</span>
+              </div>
+              <div class="text-center hover:bg-gray-200 py-1.5 cursor-pointer rounded font-semibold">
+                <span class="flex justify-center items-center"><i class='mr-1 bx bx-share bx-flip-horizontal'></i>
+                  Share</span>
+              </div>
+            </div>
+            <!-- END POST ACTIONS -->
+            <!-- POST COMMENT -->
+            <p class="font-semibold hover:underline cursor-pointer">View 2 more comments</p>
+            <!-- COMMENT LIST -->
+            <div class="">
+              <div class="flex">
+                <img class="h-8 w-8 rounded-full m-2" src="./images/contact-6.jpg" alt="">
+                <!-- COMMENT BOX -->
+                <div class="">
+                  <!-- AUTHOR -->
+                  <div class="rounded-2xl bg-gray-200 py-2 px-4 text-black">
+                    <p class="text-black font-semibold text-xs">Minh Khôi</p>
+                    <p><span class="font-semibold hover:underline cursor-pointer">Nguyễn Huy</span> khi nào lên mâm đây
+                      gái</p>
+                  </div>
+                  <!-- END AUTHOR -->
+                  <!-- COMMENT -->
+                  <div class="px-4 text-xs">
+                    <a class="text-gray-600 font-bold cursor-pointer hover:underline">Like</a>
+                    <span aria-hidden="true"> · </span>
+                    <a class="text-gray-600 font-bold cursor-pointer hover:underline">Reply</a>
+                    <span aria-hidden="true"> · </span>
+                    <a class="text-gray-500 cursor-pointer hover:underline">10w</span>
+                  </div>
+                  <!-- END COMMENT -->
+                  <!-- REPLY -->
+                  <div class="flex py-2 px-3">
+                    <div class="mr-2">
+                      <i class='bx bx-subdirectory-right font-lg'></i>
+                    </div>
+                    <div class="flex">
+                      <img class="h-5 w-5 rounded-full mr-1" src="./images/avatar.jpg" alt="">
+                      <p class="font-semibold">Nguyễn Huy replied <span aria-hidden="true"> · </span> 1 Reply</p>
+                    </div>
+                  </div>
+                  <!-- END REPLY -->
+                </div>
+                <!-- END COMMENT BOX -->
+              </div>
+            </div>
+            <!-- END COMMENT LIST -->
+
+            <!-- WRITE COMMENT -->
+            <div class="flex items-center">
+              <img class="h-8 w-8 rounded-full m-2" src="./images/avatar.jpg" alt="">
+              <input placeholder="Write a comment..." type="text"
+                class="h-9 text-gray-800 px-4 py-2 bg-gray-200 rounded-full focus:outline-none w-full">
+            </div>
+            <!-- END WRITE COMMENT -->
+
+            <!-- END POST COMMENT -->
+
+            <!-- END POST FOOTER -->
+          </div>
+        </div>
+        <!-- END POST -->
       </div>
+      <!-- END POST LIST -->
     </main>
     <!-- END MAIN CONTENT -->
-    
+
     <!-- RIGHT SIDE -->
-    <aside class="hidden lg:flex  flex-col lg:w-2/6 xl:w-1/4 h-full p-2 overflow-scroll fixed top-0 right-0 mt-14 pb-14 py-4">
+    <aside
+      class="hidden lg:flex  flex-col lg:w-2/6 xl:w-1/4 h-full p-2 overflow-scroll fixed top-0 right-0 mt-14 pb-14 py-4">
 
       <!-- FRIEND REQUESTS -->
       <div class="bg-white rounded-lg p-3 shadow-lg mx-2 text-black text-sm mt-1 mb-2">
@@ -673,7 +813,7 @@
             <span class="font-semibold">Friend Requests</span>
           </div>
           <a href="#" class="hover:bg-gray-200 rounded-full flex justify-center items-center h-8 w-8">
-            <i class='bx bx-dots-horizontal-rounded text-xl' ></i>
+            <i class='bx bx-dots-horizontal-rounded text-xl'></i>
           </a>
         </div>
         <div class="p-2 hover:bg-gray-100 rounded-lg flex space-x-2 items-center">
@@ -683,45 +823,47 @@
               <span class="font-semibold">Loumediel Stactlate</span>
               <span class="text-blue-500 font-normal text-xs inline-flex items-center">
                 18m
-                <i class='bx bxs-circle text-xs ml-1' ></i>
+                <i class='bx bxs-circle text-xs ml-1'></i>
               </span>
             </div>
             <div class="flex space-x-2 mt-1">
-              <a href="" class="w-full py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-center text-white font-semibold">Confirm</a>
-              <a href="" class="w-full py-2 bg-gray-300 hover:bg-gray-400 rounded-lg text-center font-semibold">Delete</a>
+              <a href=""
+                class="w-full py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-center text-white font-semibold">Confirm</a>
+              <a href=""
+                class="w-full py-2 bg-gray-300 hover:bg-gray-400 rounded-lg text-center font-semibold">Delete</a>
             </div>
           </div>
         </div>
       </div>
       <!-- END FRIEND REQUESTS -->
-      
+
       <span class="border-b-2 border-gray-300 my-2 mx-2"></span>
 
       <!-- YOUR PAGES -->
       <div class="flex flex justify-between items-center px-2">
         <span class="font-semibold">Your Pages</span>
         <a href="#" class="hover:bg-gray-200 rounded-full flex justify-center items-center h-8 w-8">
-          <i class='bx bx-dots-horizontal-rounded text-xl' ></i>
+          <i class='bx bx-dots-horizontal-rounded text-xl'></i>
         </a>
       </div>
       <!-- END YOUR PAGES -->
-      
+
       <span class="border-b-2 border-gray-300 my-2 mx-2"></span>
 
-      
+
       <!-- CONTACTS -->
       <div class="flex px-2 flex justify-between items-center">
         <span class="font-semibold">Contacts</span>
         <div class="flex space-x-2">
           <a href="#" class="hover:bg-gray-200 rounded-full flex justify-center items-center h-8 w-8">
-            <i class='bx bxs-video-plus text-xl' ></i>
+            <i class='bx bxs-video-plus text-xl'></i>
           </a>
           <a href="#" class="hover:bg-gray-200 rounded-full flex justify-center items-center h-8 w-8">
-            <i class='bx bx-search text-xl' ></i>
+            <i class='bx bx-search text-xl'></i>
           </a>
-        <a href="#" class="hover:bg-gray-200 rounded-full flex justify-center items-center h-8 w-8">
-          <i class='bx bx-dots-horizontal-rounded text-xl' ></i>
-        </a>
+          <a href="#" class="hover:bg-gray-200 rounded-full flex justify-center items-center h-8 w-8">
+            <i class='bx bx-dots-horizontal-rounded text-xl'></i>
+          </a>
         </div>
       </div>
 
@@ -847,19 +989,19 @@
           </a>
         </li>
 
-        
+
       </ul>
 
       <!-- END CONTACTS -->
-      
+
       <span class="border-b-2 border-gray-300 my-2 mx-2"></span>
 
-      
+
       <div class="flex px-2 flex justify-between items-center">
         <span class="font-semibold">Group Conversations</span>
       </div>
 
-      
+
       <ul class="space-y-1 w-full">
 
         <!-- CONTACT ITEM -->
@@ -877,13 +1019,13 @@
         <li>
           <a href="" class="flex items-center space-x-2 px-2 py-1 hover:bg-gray-200 rounded-lg w-full transition-all">
             <div class="h-9 w-9 bg-gray-200 hover:bg-gray-300 rounded-full flex justify-center items-center">
-              <i class='bx bx-plus text-2xl' ></i>
+              <i class='bx bx-plus text-2xl'></i>
             </div>
             <span class="font-medium text-black text-sm">Create New Group</span>
           </a>
         </li>
 
-        
+
       </ul>
     </aside>
     <!-- END RIGHT SIDE -->
@@ -892,8 +1034,8 @@
 
   <!-- NEW MESSENGER POPUP -->
   <div class="flex h-12 w-12 rounded-full shadow-lg bg-white bottom-5 right-5 justify-center items-center fixed">
-    <i class='bx bxs-edit text-2xl' ></i>
-  </div> 
+    <i class='bx bxs-edit text-2xl'></i>
+  </div>
 </body>
 
 </html>
